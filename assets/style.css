@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.font-1 {
+  font-family: "Barlow", sans-serif;
+}
+
+.font-weight-light {
+  font-weight: 400;
+}
+.font-weight-normal {
+  font-weight: 500;
+}
+.font-weight-semi-bold {
+  font-weight: 500;
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-size-16 {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar img {
+  width: 60%;
+}
+
+.openbtn {
+  position: fixed;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  z-index: 1000;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.zoom {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.white-text {
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+.white-text:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 1px white;
+  border-radius: 10px;
+}
+
+.text-danger-hover,
+.text-muted-hover,
+.text-warning-hover,
+.text-primary-hover,
+.text-success-hover {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.text-danger-hover:hover {
+  color: #dc3545;
+}
+.text-muted-hover:hover {
+  color: #6c757d;
+}
+.text-warning-hover:hover {
+  color: #ffc107;
+}
+.text-primary-hover:hover {
+  color: #0d6efd;
+}
+.text-success-hover:hover {
+  color: #198754;
+}
+
+.bg-black {
+  background-color: #111;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+  .sidebar img {
+    width: 80%;
+  }
+}
