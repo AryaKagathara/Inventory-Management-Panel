@@ -50,7 +50,7 @@ body {
   color: #f1f1f1;
 }
 
-.sidebar img {
+.side-bar-icons {
   width: 60%;
 }
 
@@ -120,6 +120,10 @@ body {
   background-color: #111;
 }
 
+.text-black {
+  color: #111;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -128,7 +132,8 @@ body {
   .sidebar a {
     font-size: 18px;
   }
-  .sidebar img {
-    width: 80%;
+  .side-bar-icons {
+    width: 50%;
   }
+
 }
